@@ -2,26 +2,6 @@
 
 ## Professionelle App Entwicklung 2022
 
-Vollumfassender Flutter Kurs um schnell und effektiv in die professionelle App-Entwicklung zu starten. Und vieles mehr!
-
-*"Mit diesem Kurs möchten wir Entwickler weltweit ermächtigen ihre Projekte professionell umzusetzen und vereinen sie in einer tollen Community!"*
-
-Steige mit diesem Kurs in die App Entwicklung mit Flutter ein. Dieser Kurs geht weit über die Grundlagen hinaus und unterscheidet sich in dem zu anderen Kursen dass du hier wirklich professionelle App Entwicklung auf basis Jahrelanger Flutter Freelancer Erfahrung lernst.
-
-Ich zeige dir worauf es bei einem Projekt wirklich ankommt. - Nicht nur wie wir eine coole UI bauen...Wir lernen wie wir eine Softwarearchitektur aufbauen die wartbar, skallierbar und effizient ist. Hier lernst du die Dinge welche dich deine ganze Karriere begleiten werden und dir auch wirklich helfen. 
-
-Keine Sorge - hier ist für jeden etwas dabei.Ob erfahrener Entwickler oder kompletter Neuling - Ich hole dich auf jedem Abstraktionslevel ab und führe dich an der Hand zur ersten kleinen Flutter App bis hin zur Professionellen Softwarearchitektur, Functional Programming, Testing und noch vieles mehr. 
-
-In diesem noch jungen Framework, gibt es bis jetzt wenige Leute die so richtig gut sind.Hier sind also viele Möglichkeiten geboten! Und mit der kontinuierlich steigenden Anzahl an Apps, die mit dem Flutter Framework umgesetzt werden, steigt auch die Nachfrage nach fähigen Entwicklern.
-
-Außerdem: Flutter und die Sprache Dart sind toll, es macht richtig Spaß damit zu entwickeln!
-
-German Flutter Community Wir haben mittlerweile die größte aktive deutsche Flutter Community auf einem eigenen Discord Server. Hier kannst du dich mit anderen Entwicklern austauschen und gegenseitig unterstützen. Wir freuen uns auch dich dabei zu haben!
-
-### ✅  IMMER AKTUELL:   Der Kurs wird weiterhin aktuell gehalten 
-
-### Was wirst du lernen?
-
 #### ⭐️   Grundlagen Dart
 
 In diesem Kurs lernst Du erst einmal die Grundlagen der Programmierung in Dart kennen.Ich gehe außerdem auf die essenziellen Teile der Programmierung mit der Sprache Dart ein und wir lernen, wie wir unsere Entwicklungsumgebung einrichten und mit dem Code Editor VS-Code umgehen. Wir fangen bei dem Grundwissen an, was überhaupt eine Variable ist und arbeiten uns dann weiter zur Objektorientierung und asynchronen Programmierung vor.
@@ -48,7 +28,7 @@ In diesem Kurs lernen wir die wichtigsten Grundlagen um mit Flutter Web zu start
 
 Hier liegt der Fokus auf Qualität und Spaß.
 
-#### ✅   Kursinhalte:
+#### ✅   Inhalte:
 
 * Grundlagenkurs Dart - Grundlagen der Programmierung
 
@@ -107,5 +87,3 @@ Hier liegt der Fokus auf Qualität und Spaß.
 * Dart Grundlagen neu & verbessert
 
 * Flutter Grundlagen neu & verbessert
-
-**❗️  Mein Hauptfokus ist jedoch die Qualität und Aktualität der Inhalte.**

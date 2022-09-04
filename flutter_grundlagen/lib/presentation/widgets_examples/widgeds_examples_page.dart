@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
@@ -30,13 +31,31 @@ class WidgetsExamplesPage extends StatelessWidget {
               //crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 ContainerTextExamples(),
                 SizedBox(
-                  height: 30,
+                  height: 10,
                 ),
                 RowExpandedWidget(),
+                SizedBox(
+                  height: 10,
+                ),
+                ProfilePicture(),
+                SizedBox(
+                  height: 10,
+                ),
+                /*Container( //! nicht nutzbar mit const nach children:
+                  height: 100,
+                  width: 200,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Image.asset(
+                      "assets/images/RhavensBubble.jpg",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),*/
               ],
             ),
           ),

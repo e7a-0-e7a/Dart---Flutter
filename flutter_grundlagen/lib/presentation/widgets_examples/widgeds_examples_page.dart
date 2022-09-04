@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
   const WidgetsExamplesPage({Key? key}) : super(key: key);
@@ -20,6 +21,28 @@ class WidgetsExamplesPage extends StatelessWidget {
               letterSpacing: 3),
           title: const Text("Rhavens Bubble"),
         ),
-        body: const Placeholder());
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10),
+            child: Column(
+              //mainAxisAlignment: MainAxisAlignment.start,
+              //crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const ContainerTextExamples(),
+                Container(
+                  color: Colors.amber,
+                  width: 350,
+                  height: 100,
+                ),
+                Container(
+                  color: Colors.green,
+                  width: 350,
+                  height: 100,
+                ),
+                const ContainerTextExamples(),
+              ],
+            ),
+          ),
+        ));
   }
 }

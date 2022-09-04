@@ -4,29 +4,23 @@
 
 #### ⭐️   Grundlagen Dart
 
-In diesem Kurs lernst Du erst einmal die Grundlagen der Programmierung in Dart kennen.Ich gehe außerdem auf die essenziellen Teile der Programmierung mit der Sprache Dart ein und wir lernen, wie wir unsere Entwicklungsumgebung einrichten und mit dem Code Editor VS-Code umgehen. Wir fangen bei dem Grundwissen an, was überhaupt eine Variable ist und arbeiten uns dann weiter zur Objektorientierung und asynchronen Programmierung vor.
+
 
 #### ⭐️   Grundlagen Flutter
 
-Hier gebe ich dir eine Einführung in die wichtigsten Elemente der UI-Erstellung mit dem Flutter Framework und bringe dir alle Grundlagen bei, die du benötigst, um eigene Benutzeroberflächen für deine Apps zu schreiben.Von der Erklärung über die Funktion des Frameworks, bis hin zur Verwendung einzelner UI-Komponenten, Themes, Animationen, Navigation und noch vielem mehr, ist alles dabei!
+
 
 #### ⭐️   Professionelle App-Entwicklung - Clean Code Architecture
 
-Anhand einer einfachen App, die wir entwickeln werden, lernen wir wie eine richtige App Entwicklung mit sauberen Softwarearchitektur funktioniert.
 
-Besonders dabei:Wir werden diese kleine und einfache App mit einer kugelsicheren Clean-Code-Software-Architektur (saubere Layer-Separation) umsetzen, welche du für jede Kunden-App verwenden kannst. Wenn du diese Architektur und Art der Arbeit verinnerlicht hast, erreicht deine Software einen extrem hohen Qualitätsanspruch. Wir integrieren das BLoC pattern in unser Projekt und trennen damit sauber Business Logic von UI, dadurch haben wir ein sehr sauberes und testbares Projekt. Dependency Injection und Functional Programming sind nur einige Werkzeuge welche uns auf unserem Weg unterstützen werden. Selbstverständlich werden wir auch Unit Testing, Widget Testing und Integration Testing behandeln und unsere App auf Herz und Nieren testen.
 
 #### ⭐️   Professionelle App-Entwicklung - Firebase:
 
-Um dich noch tiefer in die professionelle App Entwicklung einzuführen und um die wichtigsten Funktionen von Firebase zu lernen, werden wir hierfür gemeinsam eine weitere App auf basis der neuen Architektur entwickeln. Hier werden wir eine App mit mehreren Pages (Login, Register, Loading, Dashboard, Detail .. ) entwerfen und anhand dieser Create, Update und Delete von Daten mit Firebase lernen. 
+
 
 #### ⭐️ Flutter responsive Website:
 
-In diesem Kurs lernen wir die wichtigsten Grundlagen um mit Flutter Web zu starten. Die zwei wichtigsten Punkte sind hier responsive Design (Support von allen Screen Größen) und die Navigation im Web Umfeld.
 
-❗️ **Wichtig:** Bei diesem Kurs hatte ich den Anspruch dir schnell und effektiv all das Wissen zu vermitteln, das du brauchst, um in die App Entwicklung mit Flutter zu starten. Dabei bin ich nicht zu "detailversessen" und werde nicht auf alle komplexen Hintergrundprozesse eingehen, die du zum Beispiel in einem Studium vermittelt bekommst. 
-
-Hier liegt der Fokus auf Qualität und Spaß.
 
 #### ✅   Inhalte:
 

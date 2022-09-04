@@ -7,7 +7,7 @@ class ContainerTextExamples extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 180,
-      width: 350,
+      //width: 350,
       decoration: BoxDecoration(
           color: Colors.grey,
           border:

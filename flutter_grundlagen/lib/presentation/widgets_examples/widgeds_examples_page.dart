@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
-import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/rectangular_image.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {

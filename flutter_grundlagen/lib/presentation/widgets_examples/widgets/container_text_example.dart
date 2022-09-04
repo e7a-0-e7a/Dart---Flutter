@@ -27,7 +27,7 @@ class ContainerTextExamples extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             ),
             child: const Text(
-              "Bubble ur Life",
+              "Bubbles forever",
               style: TextStyle(
                   fontFamily: "Roboto", fontSize: 25, letterSpacing: 3),
             ),

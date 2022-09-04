@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/media_query_example.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
+import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/rectangular_image.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
@@ -24,6 +26,7 @@ class WidgetsExamplesPage extends StatelessWidget {
           title: const Text("Rhavens Bubble"),
         ),
         body: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             child: Column(
@@ -31,21 +34,25 @@ class WidgetsExamplesPage extends StatelessWidget {
               //crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 ContainerTextExamples(),
                 SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 RowExpandedWidget(),
                 SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
                 ProfilePicture(),
                 SizedBox(
-                  height: 10,
+                  height: 30,
                 ),
-                //! RectImage(),
+                RectImage(),
+                SizedBox(
+                  height: 30,
+                ),
+                MediaQueryExample(),
               ],
             ),
           ),

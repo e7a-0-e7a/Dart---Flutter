@@ -1,4 +1,3 @@
-
 void main() {
   Car car1 = Car();
   car1.setColor = "rot";
@@ -7,6 +6,8 @@ void main() {
   car2.setColor = "blau";
 
   String colorFromCar = car1.color;
+
+  print(colorFromCar);
 
   car1.sayColor();
   car2.sayColor();

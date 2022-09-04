@@ -1,20 +1,30 @@
+void main() {
+  int alter = 16;
+  String name = "Hans";
 
-void main (){
+  print("vor dem switch");
 
-    int alter = 16;
-    String name = "Hans";
+  switch (name) {
+    case "Peter":
+      print("ich bin Peter");
+      break;
+    case "Hans":
+      print("ich bin Hans");
+      break;
+    default:
+      print("keine ahnung");
+  }
 
-    print("vor dem switch");
+  switch (alter) {
+    case 15:
+      print("15");
+      break;
+    case 17:
+      print("17");
+      break;
+    default:
+      print("keine ahnung");
+  }
 
-    switch (name){
-      case "Peter":
-        print("ich bin Peter");
-        break;
-      case "Hans":
-        print("ich bin Hans");
-        break;
-      default:
-        print("keine ahnung");
-    }
-     print("nach dem switch");
+  print("nach dem switch");
 }

@@ -155,4 +155,14 @@ Hot reload: Lädt Code Änderungen life.
 
 Schließt die app (quit). Stoppt debugging.
 
+<br>
+
+### Package wird nicht gefunden:
+
+`flutter clean`
+
+`flutter pub get`
+
+dann IDE neu starten
+
 </details>

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
-import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/media_query_example.dart';
-import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
-import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/rectangular_image.dart';
-import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
+
+import '../widgets/container_text_example.dart';
+import '../widgets/media_query_example.dart';
+import '../widgets/profile_picture.dart';
+import '../widgets/rectangular_image.dart';
+import '../widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
   const WidgetsExamplesPage({Key? key}) : super(key: key);

@@ -8,7 +8,7 @@ class MediaQueryExample extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Container(
-      height: size.height * 0.5,
+      height: size.height * 0.1,
       width: size.width * 0.8,
       color: Colors.blueGrey,
     );

@@ -5,6 +5,8 @@ import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/profile_
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/rectangular_image.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
+import 'widgets/pageview_example.dart';
+
 class WidgetsExamplesPage extends StatelessWidget {
   const WidgetsExamplesPage({Key? key}) : super(key: key);
 
@@ -53,6 +55,10 @@ class WidgetsExamplesPage extends StatelessWidget {
                   height: 30,
                 ),
                 MediaQueryExample(),
+                SizedBox(
+                  height: 30,
+                ),
+                PageViewExample(),
               ],
             ),
           ),

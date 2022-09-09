@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/custom_buttons.dart';
+import '../widgets_examples/widgets/custom_buttons.dart';
 
 class Screen2 extends StatelessWidget {
   final String buttonText;

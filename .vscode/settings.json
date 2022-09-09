@@ -1,7 +1,4 @@
 {
     "todo-tree.tree.scanMode": "current file",
-    "rpc.appName": "Visual Studio Code",
-    "rpc.buttonEnabled": true,
-    "rpc.buttonInactiveLabel": "null",
-    "rpc.buttonInactiveUrl": "null",
+    "vscode-devtools-for-chrome.chromePath": "C:\\Programme\\Google\\Chrome\\Application\\chrome.exe",
 }

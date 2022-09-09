@@ -5,7 +5,9 @@ import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/media_qu
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/rectangular_image.dart';
 import 'package:fluttergrundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
+import 'package:provider/provider.dart';
 
+import '../../application/theme_service.dart';
 import 'widgets/pageview_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
@@ -113,8 +115,16 @@ class WidgetsExamplesPage extends StatelessWidget {
                 //! Wenn default color benutzt wird kann sie auch null sein und mit einem  (!) am ende kann man die Fehlermeldung umgehen. (Wir sagen das wir davon ausgehen das die color niemals null sein wird)
               ),
               const SizedBox(
-                height: 30,
+                width: 30,
               ),
+              Switch(
+                  value: Provider.of<ThemeService>(
+                    context,
+                  ).isDark,
+                  onChanged: (value) {
+                    Provider.of<ThemeService>(context, listen: false)
+                        .toggleTheme();
+                  }),
             ],
           ),
         ),

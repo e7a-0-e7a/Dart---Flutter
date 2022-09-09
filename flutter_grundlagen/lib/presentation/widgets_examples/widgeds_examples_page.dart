@@ -93,11 +93,23 @@ class WidgetsExamplesPage extends StatelessWidget {
               ),
               CustomButton(
                 onPressed: () {
-                  print("custom Button Pressed");
+                  Navigator.of(context).pushNamed("/screen_1");
                 },
-                buttonText: 'Klick mich',
+                buttonText: 'Go to Screen 1',
                 color: Color.fromARGB(255, 248, 130, 179),
-                elevationShadow: 20,
+                elevationShadow: 20, fontSize: 14.0,
+                //! Wenn default color benutzt wird kann sie auch null sein und mit einem  (!) am ende kann man die Fehlermeldung umgehen. (Wir sagen das wir davon ausgehen das die color niemals null sein wird)
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              CustomButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed("/screen_2");
+                },
+                buttonText: 'Go to Screen 2',
+                color: Color.fromARGB(255, 133, 1, 56),
+                elevationShadow: 20, fontSize: 14.0,
                 //! Wenn default color benutzt wird kann sie auch null sein und mit einem  (!) am ende kann man die Fehlermeldung umgehen. (Wir sagen das wir davon ausgehen das die color niemals null sein wird)
               ),
               const SizedBox(

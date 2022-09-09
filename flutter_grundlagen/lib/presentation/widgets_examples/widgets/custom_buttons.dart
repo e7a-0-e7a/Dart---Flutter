@@ -5,13 +5,15 @@ class CustomButton extends StatelessWidget {
   final String buttonText;
   final Color color;
   final double elevationShadow;
+  final double fontSize;
 
   const CustomButton(
       {Key? key,
       required this.onPressed,
       required this.buttonText,
       required this.color,
-      required this.elevationShadow})
+      required this.elevationShadow,
+      required this.fontSize})
       : super(key: key);
 
   @override
@@ -29,8 +31,8 @@ class CustomButton extends StatelessWidget {
           child: Center(
             child: Text(
               buttonText,
-              style: const TextStyle(
-                fontSize: 16,
+              style: TextStyle(
+                fontSize: fontSize,
                 fontWeight: FontWeight.bold,
               ),
             ),

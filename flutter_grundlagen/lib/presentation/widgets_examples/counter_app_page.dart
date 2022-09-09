@@ -18,7 +18,9 @@ class _CounterAppPageState extends State<CounterAppPage> {
 
   void _decementcounter() {
     setState(() {
-      _counter--;
+      if (_counter >= 1) {
+        _counter--;
+      }
     });
   }
 

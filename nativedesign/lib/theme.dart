@@ -1,5 +1,3 @@
-library colorUtils;
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +16,7 @@ final materialThemeData = ThemeData(
 );
 
 const cupertinoTheme = CupertinoThemeData(
-  primaryColor: primaryColor,
+  primaryColor: acceentColor,
   barBackgroundColor: barBackground,
   primaryContrastingColor: acceentColor,
   scaffoldBackgroundColor: scaffoldColor,
@@ -29,3 +27,6 @@ const textStyleBlackPlain = TextStyle(color: Colors.black, fontSize: 30.0);
 const bottomNavTextStyle = TextStyle(color: Colors.white, fontSize: 14.0);
 const toolbarButtonTextStyle = TextStyle(color: Colors.white, fontSize: 14.0);
 const tabsContentTextStyle = TextStyle(color: Colors.black, fontSize: 30.0);
+const defaultTextStyleDark = TextStyle(color: Colors.black, fontSize: 16.0);
+const defaultTextStylelight =
+    TextStyle(color: Colors.white, fontSize: 12.0, fontWeight: FontWeight.bold);

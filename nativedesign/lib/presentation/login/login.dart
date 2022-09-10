@@ -1,6 +1,3 @@
-import 'dart:io';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:nativedesign/theme.dart';
@@ -15,6 +12,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   bool buttonValue = false;
+  String switchText = "Don't ";
   @override
   Widget build(BuildContext context) {
     return PlatformScaffold(
@@ -66,6 +64,49 @@ class _LoginPageState extends State<LoginPage> {
                 placeholder: password,
                 obscureText: true,
               ),
+            ),
+          ),
+          // Switch
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(padding_20),
+                child: PlatformSwitch(
+                  value: buttonValue,
+                  onChanged: (value) {
+                    setState(
+                      () {
+                        buttonValue = value;
+                        if (value) {
+                          switchText = "Yes, ";
+                        } else {
+                          switchText = "Don't ";
+                        }
+                      },
+                    );
+                  },
+                ),
+              ),
+              Text(
+                switchText + remember,
+                style: defaultTextStyleDark,
+              ),
+            ],
+          ),
+          // Button
+          Padding(
+            padding: const EdgeInsets.all(padding_20),
+            child: PlatformElevatedButton(
+              onPressed: () {
+                print("Button pressed!");
+              },
+              child: const Text(
+                login,
+                style: defaultTextStylelight,
+              ),
+              material: (_, __) => MaterialElevatedButtonData(),
+              cupertino: (_, __) => CupertinoElevatedButtonData(),
             ),
           ),
         ],

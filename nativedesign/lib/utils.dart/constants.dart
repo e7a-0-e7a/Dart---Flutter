@@ -14,3 +14,4 @@ const String unPwdError = "Please enter both, user name and password";
 const String login = "Login";
 const String alert = "Alert";
 const String ok = "Ok";
+const String remember = "Remember me";

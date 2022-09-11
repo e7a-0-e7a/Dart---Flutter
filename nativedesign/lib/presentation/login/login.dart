@@ -1,5 +1,9 @@
+import 'dart:io';
+import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
+import 'package:nativedesign/presentation/home/homePage.dart';
 import 'package:nativedesign/theme.dart';
 import 'package:nativedesign/utils.dart/constants.dart';
 
@@ -13,6 +17,9 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   bool buttonValue = false;
   String switchText = "Don't ";
+  String userNameEntered = "";
+  String passwordEntered = "";
+
   @override
   Widget build(BuildContext context) {
     return PlatformScaffold(
@@ -37,7 +44,9 @@ class _LoginPageState extends State<LoginPage> {
             ),
             child: PlatformTextField(
               keyboardType: TextInputType.text,
-              onChanged: (text) {},
+              onChanged: (text) {
+                userNameEntered = text;
+              },
               material: (_, __) => MaterialTextFieldData(
                 decoration: const InputDecoration(
                   labelText: username,
@@ -53,7 +62,9 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.all(padding_20),
             child: PlatformTextField(
               keyboardType: TextInputType.text,
-              onChanged: (text) {},
+              onChanged: (text) {
+                passwordEntered = text;
+              },
               material: (_, __) => MaterialTextFieldData(
                 decoration: const InputDecoration(
                   labelText: password,
@@ -99,7 +110,17 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.all(padding_20),
             child: PlatformElevatedButton(
               onPressed: () {
-                print("Button pressed!");
+                if (userNameEntered.isEmpty || passwordEntered.isEmpty) {
+                  showAlert(unPwdError);
+                } else {
+                  Navigator.pushReplacement(
+                    context,
+                    platformPageRoute(
+                      context: context,
+                      builder: (context) => const HomePage(),
+                    ),
+                  );
+                }
               },
               child: const Text(
                 login,
@@ -113,7 +134,26 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-}
+
+  void showAlert(String message) {
+    showPlatformDialog(
+      context: context,
+      builder: (_) {
+        return PlatformAlertDialog(
+          title: const Text(alert),
+          content: Text(message),
+          actions: [
+            PlatformDialogAction(
+              child: const Text(ok),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
 
 /* IOS Design (cross) -- install pubspec.yml flutter platform widgets
 
@@ -138,3 +178,4 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
 */
+}

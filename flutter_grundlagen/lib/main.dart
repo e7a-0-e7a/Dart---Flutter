@@ -20,20 +20,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<ThemeService>(builder: (context, themeService, child) {
-      return MaterialApp(
-          theme: AppTheme.lightTheme,
-          darkTheme: AppTheme.darkTheme,
-          themeMode: themeService.isDark ? ThemeMode.dark : ThemeMode.light,
-          debugShowCheckedModeBanner: false,
-          routes: <String, WidgetBuilder>{
-            "/root": (BuildContext context) => const RootWidget(),
-            "/screen_1": (BuildContext context) =>
-                const Screen1(buttonText: "Go Back"),
-            "/screen_2": (BuildContext context) =>
-                const Screen2(buttonText: "Go Back"),
-          },
-          home: const RootWidget());
-    });
+    return Consumer<ThemeService>(
+      builder: (context, themeService, child) {
+        return MaterialApp(
+            theme: AppTheme.lightTheme,
+            darkTheme: AppTheme.darkTheme,
+            themeMode: themeService.isDark ? ThemeMode.dark : ThemeMode.light,
+            debugShowCheckedModeBanner: false,
+            routes: <String, WidgetBuilder>{
+              "/root": (BuildContext context) => const RootWidget(),
+              "/screen_1": (BuildContext context) =>
+                  const Screen1(buttonText: "Go Back"),
+              "/screen_2": (BuildContext context) =>
+                  const Screen2(buttonText: "Go Back"),
+            },
+            home: const RootWidget());
+      },
+    );
   }
 }

@@ -5,3 +5,6 @@ const String toShiny = 'to Shiny?';
 const String toDark = 'to Dark?';
 const String shinyTo = 'set to Shiny';
 const String darkTo = 'set to Dark';
+const String getAdvice = 'Get Advice';
+const String prints = 'worked!';
+const String errors = 'Ups,something gone wrong. Please try again';

@@ -1,5 +1,10 @@
+import 'package:advicer/application/advicer/advicer_bloc.dart';
 import 'package:advicer/consts.dart';
+import 'package:advicer/presentation/advicer/widgets/advice_field.dart';
+import 'package:advicer/presentation/advicer/widgets/custom_button.dart';
+import 'package:advicer/presentation/advicer/widgets/error_message.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AdviverPage extends StatelessWidget {
   const AdviverPage({Key? key}) : super(key: key);
@@ -22,20 +27,34 @@ class AdviverPage extends StatelessWidget {
             children: [
               Expanded(
                 child: Center(
-                  child: Text(
-                    waitingAdvice,
-                    style: themeData.textTheme.headline1,
+                  child: BlocBuilder<AdvicerBloc, AdvicerState>(
+                    bloc: BlocProvider.of<AdvicerBloc>(context),
+                    builder: (context, adviceState) {
+                      if (adviceState is AdvicerInitial) {
+                        return Text(
+                          waitingAdvice,
+                          style: themeData.textTheme.headline1,
+                        );
+                      } else if (adviceState is AdvicerStateLoading) {
+                        return CircularProgressIndicator(
+                          color: themeData.colorScheme.secondary,
+                        );
+                      } else if (adviceState is AdvicerStateLoaded) {
+                        return AdviceField(
+                          advice: adviceState.advice,
+                        );
+                      } else if (adviceState is AdvicerStateError) {
+                        return const ErrorMessage();
+                      }
+                      return const Placeholder();
+                    },
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 200,
                 child: Center(
-                  child: Container(
-                    height: 20,
-                    width: 20,
-                    color: Colors.white,
-                  ),
+                  child: CustomButton(),
                 ),
               ),
             ],

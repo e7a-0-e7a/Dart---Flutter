@@ -10,23 +10,30 @@ class AppTheme {
   static final Color _lightOnPrimaryColor = Colors.blueGrey.shade200;
   static const Color _lightTextPrimaryColor = Colors.black;
   static const Color _appBarColorlight = Color.fromARGB(255, 141, 46, 84);
+  static const Color _accentColorlight = Color.fromARGB(255, 202, 88, 177);
 
   static final Color _darkPrimaryColor = Colors.blueGrey.shade900;
   static const Color _darkPrimaryVariantColor = Colors.black;
   static const Color _darkOnPrimaryColor = Color.fromARGB(255, 146, 144, 174);
   static const Color _darkTextPrimaryColor = Colors.white;
   static const Color _appBarColordark = Color.fromARGB(255, 105, 0, 42);
+  static const Color _accentColordark = Color.fromARGB(255, 85, 0, 62);
 
   static const Color _iconColor = Colors.white;
+
   static const TextStyle _lightHeadingText = TextStyle(
       color: _lightTextPrimaryColor,
       fontFamily: "JetBrains Mono",
       fontSize: 20,
       fontWeight: FontWeight.bold);
+
   static const TextStyle _lightBodyText = TextStyle(
       color: _lightTextPrimaryColor,
       fontFamily: "JetBrains Mono",
-      fontStyle: FontStyle.italic);
+      fontStyle: FontStyle.italic,
+      fontWeight: FontWeight.bold,
+      fontSize: 16);
+
   static const TextTheme _lightTextTheme = TextTheme(
     headline1: _lightHeadingText,
     bodyText1: _lightBodyText,
@@ -34,8 +41,10 @@ class AppTheme {
 
   static final TextStyle _darkHeadingText =
       _lightHeadingText.copyWith(color: _darkTextPrimaryColor);
+
   static final TextStyle _darkBodyText =
       _lightBodyText.copyWith(color: _darkTextPrimaryColor);
+
   static final TextTheme _darkTextTheme = TextTheme(
     headline1: _darkHeadingText,
     bodyText1: _darkBodyText,
@@ -51,6 +60,7 @@ class AppTheme {
     colorScheme: ColorScheme.light(
         primary: _lightPrimaryColor,
         onPrimary: _lightOnPrimaryColor,
+        secondary: _accentColorlight,
         primaryVariant: _lightPrimaryVariantColor),
     textTheme: _lightTextTheme,
   );
@@ -65,6 +75,7 @@ class AppTheme {
     colorScheme: ColorScheme.dark(
       primary: _darkPrimaryColor,
       onPrimary: _darkOnPrimaryColor,
+      secondary: _accentColordark,
       primaryVariant: _darkPrimaryVariantColor,
     ),
     textTheme: _darkTextTheme,

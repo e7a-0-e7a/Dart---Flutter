@@ -1,9 +1,11 @@
+import 'package:advicer/application/advicer/advicer_bloc.dart';
 import 'package:advicer/application/theme_service.dart';
 import 'package:advicer/consts.dart';
 import 'package:advicer/presentation/advicer/adviver_page.dart';
 import 'package:advicer/root.dart';
 import 'package:advicer/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -33,7 +35,11 @@ class MyApp extends StatelessWidget {
             '/root': (BuildContext context) => const RootWidget(),
             '/adviser_page': (BuildContext context) => const AdviverPage(),
           },
-          home: const RootWidget(),
+          home: BlocProvider(
+            //? MultiBlocProvider für mehrere Bloc´s
+            create: (context) => AdvicerBloc(),
+            child: const RootWidget(),
+          ),
         );
       },
     );
